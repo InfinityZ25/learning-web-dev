@@ -1,0 +1,28 @@
+/** Random CSS use*/
+/*Style all h2*/
+h2 {
+  font-size: 30px;
+  color: violet;
+}
+/* Style elements with these classes */
+.first {
+  font-size: 69px;
+}
+.cool {
+  font-size: 42px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+/*Style elements with class uppercase and cool*/
+.uppercase.cool {
+  padding: 3%;
+}
+/* Style Only Span tags inside a h1 tag*/
+h1 span {
+  color: thistle;
+}
+/*Just a random class pinche (TM)*/
+.pinche {
+  font-size: 33px;
+}
