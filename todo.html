@@ -1,50 +1,130 @@
 <DOCTYPE html>
-<html>
- <head>
-   <title>Things to do later</title>
- </head>
-  
-  <body>
-    <div class="math_courses">
-    <h3>Mathematics Courses to Take</h3>
-    <ul>
-      <li>
-        MIT OCW - Linear Algebra (<a href="https://www.youtube.com/watch?v=ZK3O402wf1c&list=PL49CF3715CB9EF31D&index=1" target="_blank">here</a>)
-       </li>
-      <li>
-        MIT OCW - Mathematics for Computer Science (<a href="https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLWX710qNZo_sT8y9Nt8vyC_fXOEo-ebTS" target="_blank">here</a>) (Discrete Math)
-      </li>
-    </ul>
-    </div>
-    <div class="future_projects">
-    <h3>Teaching Ideas</h3>
-    <ul>
-      <li>
-        Create a mathematics and programming course using Minecraft. Use Particles to draw angles and trajectories for trig. Use cartisian planes to teach the fundamentals of calculus. Use applied calculus to explain the beauty of Calculus 2 with Volumes and Surface Areas of 3D objects.
-       </li>
-    </ul>
-    </div>
-     
-    <div class="company_projects">
-    <h3>Production Ideas</h3>
-    <ul>
-      <li>
-       Create own dns server to improve queries and do cool tricks. Use TXT records for condor data. Tutorial to do it on python <a href="https://youtube.com/playlist?list=PLBOh8f9FoHHhvO5e5HF_6mYvtZegobYX2" target="_blank">here<a>
-      </li>
-    </ul>
-    </div>
+  <html>
+    <head>
+      <title>Things to do later</title>
+    </head>
 
-    
-  </body>
-  
-  <footer>
-    <br />
-    <p>
-      Source code
-      <a href="https://github.com/InfinityZ25/learning-web-dev/">here</a>
-      <br />
-      <a href="/">Click to go back</a>
-    </p>
-  </footer>
-  
-<html>
+    <body>
+      <div class="math_courses">
+        <h3>Mathematics Courses to Take</h3>
+        <ul>
+          <li>
+            MIT OCW - Linear Algebra (<a
+              href="https://www.youtube.com/watch?v=ZK3O402wf1c&list=PL49CF3715CB9EF31D&index=1"
+              target="_blank"
+              >here</a
+            >)
+          </li>
+          <li>
+            MIT OCW - Mathematics for Computer Science (<a
+              href="https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLWX710qNZo_sT8y9Nt8vyC_fXOEo-ebTS"
+              target="_blank"
+              >here</a
+            >) (Discrete Math)
+          </li>
+        </ul>
+      </div>
+      <div class="future_projects">
+        <h3>Teaching Ideas</h3>
+        <ul>
+          <li>
+            <p>
+              Create a mathematics and programming course using Minecraft. Use
+              Particles to draw angles and trajectories for trig. Use cartisian
+              planes to teach the fundamentals of calculus. Use applied calculus
+              to explain the beauty of Calculus 2 with Volumes and Surface Areas
+              of 3D objects.
+              <a href="https://github.com/InfinityZ25/learning-web-dev/"
+                >here</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="company_projects_box">
+        <h3>Production Ideas</h3>
+        <ul>
+          <li>
+            <p>
+              Create own dns server to improve queries and do cool tricks. Use
+              TXT records for condor data. Tutorial to do it on python
+              <a
+                href="https://youtube.com/playlist?list=PLBOh8f9FoHHhvO5e5HF_6mYvtZegobYX2"
+                target="_blank"
+                >here</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!-- Watchlist-->
+      <div class="watchlist">
+        <h2>Watchlist</h2>
+        <ul>
+          <li>
+            Applications of non-ecludean ditance | Zach Star
+            <a href="https://www.youtube.com/watch?v=Usngvpiv_LI">link</a>
+          </li>
+        </ul>
+        <!-- WIP: Form needs a backend to keep the data-->
+        <h3>Add to list form</h3>
+        <form action="https://api.jcedeno.us/watchlist" method="post">
+          <div>
+            <label for="link">Resource URL:&nbsp;</label>
+            <input
+              type="text"
+              name="link"
+              id="link"
+              placeholder="enter video/website"
+            /><br />
+            <br />
+            <label for="fi">Description:&nbsp;</label>
+            <input
+              type="text"
+              name="first_impressions"
+              id="fi"
+              placeholder="why are you adding it?"
+            /><br />
+            <p>What Category is this?</p>
+            <p>
+              <input
+                type="checkbox"
+                id="math"
+                name="mathematics_cat"
+                value="math_v"
+              />
+              <label for="math"> Mathematics</label><br />
+              <input type="checkbox" id="compsci" name="compsci" value="comp" />
+              <label for="compsci">Computer Science</label><br />
+              <input type="checkbox" id="phil" name="philosophy" value="phil" />
+              <label for="phil">Philosophy</label><br />
+              <input type="checkbox" id="phil" name="philosophy" value="phil" />
+              <label for="biz">Business</label>
+              <br />
+              <br />
+              <input
+                type="text"
+                name="auth"
+                id="auth"
+                placeholder="super secret code"
+              />
+              <input type="submit" value="Add" />
+            </p>
+          </div>
+        </form>
+      </div>
+    </body>
+
+    <footer>
+      ---
+      <p>
+        Source code
+        <a href="https://github.com/InfinityZ25/learning-web-dev/">here</a>
+        <br />
+        <a href="/">Click to go back</a>
+      </p>
+    </footer>
+
+    <html></html></html
+></DOCTYPE>
