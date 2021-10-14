@@ -1,144 +1,193 @@
-<DOCTYPE html>
+<!DOCTYPE html>
   <html>
     <head>
       <title>Things to do later</title>
-      <link rel="stylesheet" type="text/css" href="css/todo.css" />
-      <script src="https://cdn-tailwindcss.vercel.app/"></script>
-      <style type="text/tailwindcss">
-        body {
-          @apply bg-pink-100;
-        }
-      </style>
+      <link
+        href="https://unpkg.com/tailwindcss@^2.2.17/dist/tailwind.min.css"
+        rel="stylesheet"
+      />
     </head>
-
+    
     <body>
-      <div class="math_courses">
-        <h3>Mathematics Courses to Take</h3>
-        <ul>
-          <li>
-            MIT OCW - Linear Algebra (<a
-              href="https://www.youtube.com/watch?v=ZK3O402wf1c&list=PL49CF3715CB9EF31D&index=1"
-              target="_blank"
-              >here</a
-            >)
-          </li>
-          <li>
-            MIT OCW - Mathematics for Computer Science (<a
-              href="https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLWX710qNZo_sT8y9Nt8vyC_fXOEo-ebTS"
-              target="_blank"
-              >here</a
-            >) (Discrete Math)
-          </li>
-        </ul>
+    <div class="flex ...">
+      <div class="flex-1 ...">
+        <p class="text-center text-gray-500 text-xs">
+          <div class="math_courses">
+            <h1>🧮 Mathematics Courses to Take</h1>
+            <ul class="list-outside md:list-inside">
+              <li>
+                MIT OCW - Linear Algebra (<a
+                  href="https://www.youtube.com/watch?v=ZK3O402wf1c&list=PL49CF3715CB9EF31D&index=1"
+                  target="_blank"
+                  >here</a
+                >)
+              </li>
+              <li>
+                MIT OCW - Mathematics for Computer Science (<a
+                  href="https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLWX710qNZo_sT8y9Nt8vyC_fXOEo-ebTS"
+                  target="_blank"
+                  >here</a
+                >) (Discrete Math)
+              </li>
+            </ul>
+          </div>
+        </p>
       </div>
-      <div class="future_projects">
-        <h3>Teaching Ideas</h3>
-        <ul>
-          <li>
-            <p>
-              Create a mathematics and programming course using Minecraft. Use
-              Particles to draw angles and trajectories for trig. Use cartisian
-              planes to teach the fundamentals of calculus. Use applied calculus
-              to explain the beauty of Calculus 2 with Volumes and Surface Areas
-              of 3D objects.
-              <a href="https://github.com/InfinityZ25/learning-web-dev/"
-                >here</a
-              >
-            </p>
-          </li>
-        </ul>
-      </div>
+      <div class="contents">
+        <div class="flex-1 ...">
 
-      <div class="company_projects_box">
-        <h3>Production Ideas</h3>
-        <ul>
-          <li>
-            <p>
-              Create own dns server to improve queries and do cool tricks. Use
-              TXT records for condor data. Tutorial to do it on python
-              <a
-                href="https://youtube.com/playlist?list=PLBOh8f9FoHHhvO5e5HF_6mYvtZegobYX2"
-                target="_blank"
-                >here</a
-              >
-            </p>
-          </li>
-          <li>
-            <p>
-              Use <a href="https://forum.techhut.tv/t/clean-look-with-qogir-gnome-41/71" target="_blank">this</a> cool looking clean gnome look to build the basis for hynix os. 
-              <br>
-              <img src="https://forum.techhut.tv/uploads/default/original/1X/3d9aa2dad01582d0eda935b9b360484219ccde69.jpeg"/>     
-            </p>
-          </li>
-        </ul>
+          <div class="future_projects">
+            <h3>Teaching Ideas</h3>
+            <ul class="list-outside md:list-inside">
+              <li>
+                <p>
+                  Create a mathematics and programming course using Minecraft. Use
+                  Particles to draw angles and trajectories for trig. Use cartisian
+                  planes to teach the fundamentals of calculus. Use applied calculus
+                  to explain the beauty of Calculus 2 with Volumes and Surface Areas
+                  of 3D objects.
+                  <a href="https://github.com/InfinityZ25/learning-web-dev/"
+                    >here</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+        <div class="flex-1 ...">
+
+          <div class="company_projects_box">
+            <h3>Production Ideas</h3>
+            <ul class="list-outside md:list-inside">
+              <li>
+                <p>
+                  Create own dns server to improve queries and do cool tricks. Use
+                  TXT records for condor data. Tutorial to do it on python
+                  <a
+                    href="https://youtube.com/playlist?list=PLBOh8f9FoHHhvO5e5HF_6mYvtZegobYX2"
+                    target="_blank"
+                    >here</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  Use
+                  <a
+                    href="https://forum.techhut.tv/t/clean-look-with-qogir-gnome-41/71"
+                    target="_blank"
+                    >this</a
+                  >
+                  cool looking clean gnome look to build the basis for hynix os.
+                  <br />
+                  <img
+                    src="https://forum.techhut.tv/uploads/default/original/1X/3d9aa2dad01582d0eda935b9b360484219ccde69.jpeg"
+                  />
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <!-- Watchlist-->
-      <div class="watchlist">
-        <h2>Watchlist</h2>
-        <ul>
-          <li>
-            Applications of non-ecludean ditance | Zach Star
-            <a href="https://www.youtube.com/watch?v=Usngvpiv_LI">link</a>
-          </li>
-        </ul>
-        <!-- WIP: Form needs a backend to keep the data-->
-        <h3>Add to list form</h3>
-        <form action="https://api.jcedeno.us/watchlist" method="post">
-          <div>
-            <label for="link">Resource URL:&nbsp;</label>
-            <input
-              type="text"
-              name="link"
-              id="link"
-              placeholder="enter video/website"
-            /><br />
-            <br />
-            <label for="fi">Description:&nbsp;</label>
-            <input
-              type="text"
-              name="first_impressions"
-              id="fi"
-              placeholder="why are you adding it?"
-            /><br />
-            <p>What Category is this?</p>
-            <p>
-              <input
-                type="checkbox"
-                id="math"
-                name="mathematics_cat"
-                value="math_v"
-              />
-              <label for="math"> Mathematics</label><br />
-              <input type="checkbox" id="compsci" name="compsci" value="comp" />
-              <label for="compsci">Computer Science</label><br />
-              <input type="checkbox" id="phil" name="philosophy" value="phil" />
-              <label for="phil">Philosophy</label><br />
-              <input type="checkbox" id="phil" name="philosophy" value="phil" />
-              <label for="biz">Business</label>
-              <br />
-              <br />
+      <div class="flex-1 ...">
+      
+        <!-- Watchlist-->
+        <div class="watchlist">
+          <h2>Watchlist</h2>
+          <ul class="list-outside md:list-inside">
+            <li>
+              Applications of non-ecludean ditance | Zach Star
+              <a href="https://www.youtube.com/watch?v=Usngvpiv_LI">link</a>
+            </li>
+          </ul>
+          <!-- WIP: Form needs a backend to keep the data-->
+          <h3>Add to list form</h3>
+          <form action="https://api.jcedeno.us/watchlist" method="post">
+            <div>
+              <label for="link">Resource URL:&nbsp;</label>
               <input
                 type="text"
-                name="auth"
-                id="auth"
-                placeholder="super secret code"
-              />
-              <input type="submit" value="Add" />
-            </p>
-          </div>
-        </form>
-      </div>
+                name="link"
+                id="link"
+                placeholder="enter video/website"
+              /><br />
+              <br />
+              <label for="fi">Description:&nbsp;</label>
+              <input
+                type="text"
+                name="first_impressions"
+                id="fi"
+                placeholder="why are you adding it?"
+              /><br />
+              <p>What Category is this?</p>
+              <p>
+                <input
+                  type="checkbox"
+                  id="math"
+                  name="mathematics_cat"
+                  value="math_v"
+                />
+                <label for="math"> Mathematics</label><br />
+                <input type="checkbox" id="compsci" name="compsci" value="comp" />
+                <label for="compsci">Computer Science</label><br />
+                <input type="checkbox" id="phil" name="philosophy" value="phil" />
+                <label for="phil">Philosophy</label><br />
+                <input type="checkbox" id="phil" name="philosophy" value="phil" />
+                <label for="biz">Business</label>
+                <br />
+                <br />
+                <input
+                  type="text"
+                  name="auth"
+                  id="auth"
+                  placeholder="super secret code"
+                />
+                <input type="submit" value="Add" />
+              </p>
+            </div>
+          </form>
+        </div></div>
+    </div>
+
     </body>
+    <footer class="footer bg-white relative pt-1 border-b-2 border-blue-700">
+      <div class="container mx-auto px-6">
+  
+          <div class="sm:flex sm:mt-8">
+              <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+                  <div class="flex flex-col">
+                      <span class="font-bold text-gray-700 uppercase mb-2">Footer header 1</span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                  </div>
+                  <div class="flex flex-col">
+                      <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Footer header 2</span>
+                      <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">link 1</a></span>
+                  </div>
+                  <div class="flex flex-col">
+                      <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Footer header 3</span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container mx-auto px-6">
+          <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
+              <div class="sm:w-2/3 text-center py-6">
+                  <p class="text-sm text-blue-700 font-bold mb-2">
+                      © 2020 by Pavlove BIOKOU
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
 
-    <footer>
-      ---
-      <p>
-        Source code
-        <a href="https://github.com/InfinityZ25/learning-web-dev/">here</a>
-        <br />
-        <a href="/">Click to go back</a>
-      </p>
-    </footer>
 
-    <html></html></html
-></DOCTYPE>
+</html>
